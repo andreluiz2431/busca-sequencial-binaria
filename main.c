@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 
 void seqSearch(char *data, char *nameFile, int sort){
   char final[256];
@@ -32,11 +33,10 @@ void seqSearch(char *data, char *nameFile, int sort){
     fgets(dado, 10, arqDados);
     
     //printf("%s", dado);
-    if(dado == data){
+    if(dado == data){ // NÃO ESTÁ ACHANDO!!
       break;
     }
     count++;
-
   }
   //printf("\nResultados: %d", count);
 
